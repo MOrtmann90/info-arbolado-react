@@ -8,7 +8,7 @@ const Hero = () => {
       <div className="hero-bg"></div>
       <div className="relative max-w-screen-xl text-center ">
         <h1 className="">ARBOLADO PÚBLICO</h1>
-        <p className="w-2/3 py-12 mx-auto text-2xl font-light leading-relaxed text-white">
+        <p className="max-w-screen-xl px-2 py-12 mx-auto text-2xl font-light leading-relaxed text-white">
           Desde la diversidad de especies hasta su impacto en el aire que
           respiramos, descubre información clave para valorar y proteger este
           tesoro verde. ¡Únete a nuestra misión de promover un entorno más verde

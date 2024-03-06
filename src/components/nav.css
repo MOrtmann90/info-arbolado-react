@@ -27,7 +27,7 @@
 }
 
 .nav-link-btn {
-  @apply text-center cursor-pointer hover:border-b-[3px] hover:border-white transition-all duration-100 ease-linear;
+  @apply text-center flex justify-center cursor-pointer hover:border-b-[3px] hover:border-white transition-all duration-100 ease-linear;
 }
 
 .active {

@@ -3,6 +3,7 @@ import fchLogo from "/src/assets/fch-logo.png";
 import { RiTreeFill } from "react-icons/ri";
 import { FaBars } from "react-icons/fa6";
 import { FaXmark } from "react-icons/fa6";
+import { FaAngleDown } from "react-icons/fa";
 import { Link as ScrollLink } from "react-scroll";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
@@ -13,6 +14,7 @@ import "./nav.css";
 const Nav = () => {
   const [navBackground, setNavBackground] = useState(false);
   const [isNavOpen, setIsNavOpen] = useState(false);
+  const [isNavDropOpen, setIsNavDropOpen] = useState(false);
 
   const onResize = () => {
     if (window.innerWidth > 768) {
@@ -32,10 +34,15 @@ const Nav = () => {
 
   const closeMobileMenu = () => {
     setIsNavOpen(false);
+    isNavDropOpen && setIsNavDropOpen(!isNavDropOpen);
   };
 
   const handleClick = () => {
     setIsNavOpen(!isNavOpen);
+  };
+
+  const onInfo = () => {
+    setIsNavDropOpen(!isNavDropOpen);
   };
 
   // --------------------------------------------
@@ -70,7 +77,6 @@ const Nav = () => {
               className="nav-link-btn"
               to="home"
               spy={true}
-              smooth={true}
               offset={0}
               duration={0}
               onClick={closeMobileMenu}
@@ -84,7 +90,6 @@ const Nav = () => {
               to="acerca"
               spy={true}
               hashSpy={true}
-              smooth={true}
               offset={0}
               duration={0}
               onClick={closeMobileMenu}
@@ -98,7 +103,6 @@ const Nav = () => {
               to="resumen"
               spy={true}
               hashSpy={true}
-              smooth={true}
               offset={0}
               duration={0}
               onClick={closeMobileMenu}
@@ -112,7 +116,6 @@ const Nav = () => {
               to="mapas"
               spy={true}
               hashSpy={true}
-              smooth={true}
               offset={0}
               duration={0}
               onClick={closeMobileMenu}
@@ -120,63 +123,67 @@ const Nav = () => {
               Mapas
             </ScrollLink>
           </li>
-          <li className="relative group">
+          <li>
             <ScrollLink
               className="nav-link-btn"
-              to="info"
+              to="relevamiento"
               spy={true}
               hashSpy={true}
-              smooth={true}
               offset={0}
               duration={0}
               onClick={closeMobileMenu}
             >
-              Info
+              Relevamiento
             </ScrollLink>
-            <ul className="absolute inset-x-0 hidden p-2 space-y-6 rounded-md top-8 lg:space-y-2 min-w-fit group-hover:block lg:bg-main-500/70">
-              <li>
-                <ScrollLink
-                  className="relative nav-link-btn"
-                  to="info1"
-                  spy={true}
-                  hashSpy={true}
-                  smooth={true}
-                  offset={-120}
-                  duration={0}
-                  onClick={closeMobileMenu}
-                >
-                  Especies
-                </ScrollLink>
-              </li>
-              <li>
-                <ScrollLink
-                  className="relative nav-link-btn"
-                  to="info2"
-                  spy={true}
-                  hashSpy={true}
-                  smooth={true}
-                  offset={-120}
-                  duration={0}
-                  onClick={closeMobileMenu}
-                >
-                  Altura
-                </ScrollLink>
-              </li>
-              <li>
-                <ScrollLink
-                  className="relative nav-link-btn"
-                  to="info3"
-                  spy={true}
-                  hashSpy={true}
-                  smooth={true}
-                  offset={-120}
-                  duration={0}
-                  onClick={closeMobileMenu}
-                >
-                  Interferencias
-                </ScrollLink>
-              </li>
-            </ul>
+          </li>
+          <li
+            className="relative flex group hover:border-b-[3px] cursor-pointer transition-all duration-100 ease-linear mx-auto"
+            onClick={onInfo}
+          >
+            Info <FaAngleDown className="self-center" />
+            {isNavDropOpen && (
+              <ul className="absolute p-2 space-y-6 text-center transform -translate-x-1/2 rounded-md left-1/2 top-10 lg:space-y-2 w-fit lg:bg-main-500/70">
+                <li>
+                  <ScrollLink
+                    className="relative nav-link-btn"
+                    to="info1"
+                    spy={true}
+                    hashSpy={true}
+                    offset={-120}
+                    duration={0}
+                    onClick={closeMobileMenu}
+                  >
+                    Especies
+                  </ScrollLink>
+                </li>
+                <li>
+                  <ScrollLink
+                    className="relative nav-link-btn"
+                    to="info2"
+                    spy={true}
+                    hashSpy={true}
+                    offset={-120}
+                    duration={0}
+                    onClick={closeMobileMenu}
+                  >
+                    Altura
+                  </ScrollLink>
+                </li>
+                <li>
+                  <ScrollLink
+                    className="relative nav-link-btn"
+                    to="info3"
+                    spy={true}
+                    hashSpy={true}
+                    offset={-120}
+                    duration={0}
+                    onClick={closeMobileMenu}
+                  >
+                    Interferencias
+                  </ScrollLink>
+                </li>
+              </ul>
+            )}
           </li>
         </ul>
 

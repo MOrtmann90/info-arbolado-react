@@ -4,6 +4,7 @@ import About from "./components/About";
 import Nav from "./components/Nav";
 import Metrics from "./components/Metrics";
 import Maps from "./components/Maps";
+import Survey from "./components/Survey";
 import Info from "./components/Info";
 import Footer from "./components/Footer";
 import BackToTop from "./components/BackToTop";
@@ -20,6 +21,7 @@ function App() {
         <About />
         <Metrics />
         <Maps />
+        <Survey/>
         <Info />
         <Footer />
       </Router>
