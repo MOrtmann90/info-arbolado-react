@@ -1,0 +1,35 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.header {
+  @apply fixed z-50 w-full bg-black/30 md:bg-transparent;
+}
+
+.header.active-nav {
+  @apply backdrop-blur-sm bg-main-500/90;
+}
+
+.navbar {
+  @apply relative flex items-center justify-between max-w-screen-xl p-2 mx-auto text-white;
+}
+
+.nav-menu {
+  @apply items-center hidden align-middle md:h-full md:space-x-10 md:flex;
+}
+
+.nav-menu-resp {
+  @apply absolute left-0 flex flex-col w-full h-screen p-4 space-y-8 text-xl text-center backdrop-blur-sm bg-main-500/90 top-12 md:hidden;
+}
+
+.menu-icon {
+  @apply block cursor-pointer md:hidden;
+}
+
+.nav-link-btn {
+  @apply text-center cursor-pointer hover:border-b-[3px] hover:border-white transition-all duration-100 ease-linear;
+}
+
+.active {
+  @apply font-semibold border-b-[3px] border-white;
+}

@@ -1,0 +1,35 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  h1 {
+    @apply p-20 text-5xl font-black text-white font-inter;
+  }
+
+  h2 {
+    @apply text-3xl font-black font-inter text-main-900;
+  }
+
+  h3 {
+    @apply text-xl font-inter text-footer;
+  }
+
+  p {
+    @apply font-lato;
+  }
+
+  .logo {
+    @apply h-16;
+  }
+
+  .info-section {
+    @apply h-screen max-w-screen-xl px-10 pb-10 mx-auto pt-28;
+  }
+
+  .info-articles {
+    @apply min-h-screen;
+  }
+}

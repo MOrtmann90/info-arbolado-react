@@ -1,0 +1,11 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.hero {
+  @apply relative flex flex-col items-center justify-center h-screen bg-bottom bg-cover bg-main-500;
+}
+
+.hero-bg {
+  @apply absolute w-full h-full bg-gradient-to-br from-[#42493A] to-main-500 opacity-80 from-30%;
+}
