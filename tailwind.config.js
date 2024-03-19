@@ -10,9 +10,9 @@ export default {
       colors: {
         transparent: "transparent",
         current: "currentColor",
-        'main-100': "#96BD6C",
+        'main-100': "#e6ecdb",
         'main-500': "#799A55",
-        'main-900': "#6D8F49",
+        'main-900': "#323f28",
         footer: "#232323",
       },
       backgroundImage: {

@@ -9,12 +9,12 @@ const Metrics = () => {
       <article className="flex flex-col items-center justify-between w-full h-full mx-auto my-auto md:flex-row md:w-1/2">
         <div className="my-auto space-y-8">
           <CircleCard
-            cardNumber="167"
+            cardNumber="74"
             cardTitle="especies"
             cardSubt="identificadas"
           />
           <CircleCard
-            cardNumber="136"
+            cardNumber="135"
             cardTitle="manzanas"
             cardSubt="identificadas"
           />
@@ -26,17 +26,17 @@ const Metrics = () => {
         </div>
         <div className="my-auto space-y-8">
           <CircleCard
-            cardNumber="1320"
+            cardNumber="4191"
             cardTitle="cazuelas"
             cardSubt="relevadas"
           />
           <CircleCard
-            cardNumber="295"
+            cardNumber="459"
             cardTitle="hectáreas"
             cardSubt="de trabajo"
           />
           <CircleCard
-            cardNumber="544"
+            cardNumber="335"
             cardTitle="cuadras"
             cardSubt="recorridas"
           />

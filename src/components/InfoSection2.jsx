@@ -8,12 +8,12 @@ const InfoSection2 = () => {
       <div className="flex flex-col items-center justify-between py-32 lg:items-end lg:flex-row ">
         {/* CARD 1 */}
         <TreesHeight
-          treeClass="&gt;9"
-          treeCount="506"
-          treeHeight="h-96"
-          personHeight="h-14"
-          personRight="right-24"
-          personBottom="bottom-1"
+          treeClass="&#60;3"
+          treeCount="873"
+          treeHeight="h-52"
+          personHeight="h-24"
+          personRight="right-10"
+          personBottom="bottom-0"
         />
         {/* CARD 2 */}
         <TreesHeight
@@ -24,14 +24,15 @@ const InfoSection2 = () => {
           personRight="right-20"
           personBottom="bottom-1"
         />
+
         {/* CARD 3 */}
         <TreesHeight
-          treeClass="&#60;3"
-          treeCount="873"
-          treeHeight="h-52"
-          personHeight="h-24"
-          personRight="right-10"
-          personBottom="bottom-0"
+          treeClass="&gt;9"
+          treeCount="506"
+          treeHeight="h-96"
+          personHeight="h-14"
+          personRight="right-24"
+          personBottom="bottom-1"
         />
       </div>
     </article>

@@ -8,11 +8,11 @@ const Hero = () => {
       <div className="hero-bg"></div>
       <div className="relative max-w-screen-xl text-center ">
         <h1 className="">ARBOLADO PÚBLICO</h1>
-        <p className="max-w-screen-xl px-2 py-12 mx-auto text-2xl font-light leading-relaxed text-white">
-          Desde la diversidad de especies hasta su impacto en el aire que
-          respiramos, descubre información clave para valorar y proteger este
-          tesoro verde. ¡Únete a nuestra misión de promover un entorno más verde
-          y saludable explorando nuestras estadísticas!{" "}
+        <p className="max-w-screen-lg px-2 py-12 mx-auto text-2xl font-light leading-relaxed text-white">
+          Explora el corazón verde que embellece nuestra ciudad y mejora nuestra
+          calidad de vida. Uníte a nuestra misión de promover un entorno más
+          saludable y sostenible explorando nuestras estadísticas. Descubrí
+          información clave para valorar y proteger este tesoro verde
         </p>
       </div>
 

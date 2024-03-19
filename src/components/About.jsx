@@ -1,5 +1,6 @@
 import React, { useEffect } from "react";
-import { FaCalendarAlt } from "react-icons/fa";
+import MilestoneVertical from "./Milestone";
+import "./about.css";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
@@ -15,66 +16,81 @@ const About = () => {
       data-aos="fade-right"
     >
       <h2>Sobre el proyecto</h2>
-      <div className="space-y-8 text-center">
+      <div className="space-y-8 text-justify">
         <p>
-          Lorem ipsum dolor sit amet <span className="text-bold">consectetur</span> adipisicing elit. Quo laborum
-          optio excepturi sint. Veritatis tempore est asperiores animi ex
-          sapiente iusto dolores cupiditate omnis ipsum expedita velit at maxime
-          totam esse similique quo ad quas, ab aliquam perferendis optio
-          consectetur distinctio. Natus ut provident officiis minima veniam?
-          Temporibus, cumque eos?
+          La urbanización creciente y sus efectos plantean desafíos
+          significativos en la gestión ambiental urbana, especialmente en un
+          contexto de cambio climático global. Las soluciones basadas en la
+          naturaleza, entre ellas la
+          <span className="extra-info"> infraestructura verde urbana</span>,
+          emergen como estrategias para abordar los problemas urbanos. La
+          comunidad mundial ha adoptado los Objetivos de Desarrollo Sostenible
+          (ODS), donde los
+          <span className="extra-info"> bosques urbanos</span> desempeñan un rol
+          fundamental en la consecución de estos y específicamente contribuyen a
+          lograr ciudades inclusivas, seguras, resilientes y sostenibles.
         </p>
         <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias,
-          voluptatibus dolores! Voluptas eum eveniet magnam reiciendis eos
-          similique dolorum ut perferendis, quaerat expedita laboriosam
-          asperiores nesciunt voluptates eligendi iusto modi?
+          En tal sentido, se propuso estudiar el{" "}
+          <span className="extra-info">arbolado urbano en alineación </span>
+          de la ciudad de Tandil.
+        </p>
+        <p>
+          Para ello, se realizó un relevamiento abarcando un total de 700
+          manzanas con presencia de cordón cuneta. Los trabajos de campo
+          tuvieron una duración total aproximada de 34 meses con jornadas de 4
+          horas diarias entre los años 2019 - 2023. El relevamiento se realizó a
+          pie, registrando en cada frente la presencia de árboles, así como
+          también su ausencia (<span className="extra-info">planteras</span>{" "}
+          vacías o inexistentes).
+        </p>
+        <p>
+          Todos los árboles fueron referenciados por su ubicación, seguidamente
+          identificados a nivel de especie (nombre científico y vulgar) y
+          caracterizados (altura, inclinación, heridas visibles y estado
+          general). Además, se registraron posibles interferencias del arbolado
+          con su entorno como problemas con de alumbrado, tendido eléctrico,
+          señalización, daños a estructuras e infraestructuras.
+        </p>
+        <p>
+          A partir de este relevamiento se generó una base de datos que facilita
+          la elaboración de diagnósticos indispensables para planificar y
+          gestionar el mejoramiento del arbolado de alineación de la ciudad de
+          Tandil.
         </p>
       </div>
       {/* --------- TIMELINE --------- */}
-      <div className="hidden md:block">
-        <ol className="items-center sm:flex">
-          <li className="relative mb-6 sm:mb-0">
-            <div className="flex items-center">
-              <div className="z-10 flex items-center justify-center bg-white rounded-full size-6 ring-0 sm:ring-8 ring-main-500 shrink-0">
-                <FaCalendarAlt className="text-main-500" />
-              </div>
-              <div className="hidden sm:flex w-full  h-0.5 bg-main-500"></div>
-            </div>
 
-            <div className="mt-3 sm:pe-8">
-              <h3 className="text-lg font-semibold text-gray-900 ">
-                Inicio del relevamiento
-              </h3>
-              <time className="block mb-2 text-sm font-normal leading-none text-gray-500">
-                Diciembre 2020
-              </time>
-              <p className="text-base font-normal text-gray-500">
-                Se da inicio a las tareas de relevamiento en el área X
-              </p>
-            </div>
-          </li>
-
-          <li className="relative mb-6 sm:mb-0">
-            <div className="flex items-center">
-              <div className="z-10 flex items-center justify-center bg-white rounded-full size-6 ring-0 sm:ring-8 ring-main-500 shrink-0">
-                <FaCalendarAlt className="text-main-500" />
-              </div>
-              <div className="hidden sm:flex w-full  h-0.5 bg-main-500"></div>
-            </div>
-
-            <div className="mt-3 sm:pe-8">
-              <h3 className="text-lg font-semibold text-gray-900 ">
-                Inicio del relevamiento
-              </h3>
-              <time className="block mb-2 text-sm font-normal leading-none text-gray-500">
-                Diciembre 2020
-              </time>
-              <p className="text-base font-normal text-gray-500">
-                Se da inicio a las tareas de relevamiento en el área X
-              </p>
-            </div>
-          </li>
+      <div className="px-5 py-3 my-10 rounded-lg bg-main-100">
+        <ol className="relative border-gray-300 border-s">
+          <MilestoneVertical
+            time="2001 - 2003"
+            title="Antecedente de relevamiento"
+          />
+          <MilestoneVertical
+            time="Octubre 2019"
+            title="Definición de variables"
+          />
+          <MilestoneVertical
+            time="Noviembre 2019"
+            title="Taller de formación de relevadores"
+          />
+          <MilestoneVertical
+            time="Marzo 2020"
+            title="Interrupción de actividades (pandemia COVID-19)"
+          />
+          <MilestoneVertical
+            time="Octubre 2020"
+            title="Reinicio de actividades"
+          />
+          <MilestoneVertical
+            time="Abril 2023"
+            title="Taller de formación de relevadores"
+          />
+          <MilestoneVertical
+            time="Diciembre 2023"
+            title="Finalización de relevamiento"
+          />
         </ol>
       </div>
     </section>

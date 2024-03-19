@@ -35,6 +35,7 @@ const Footer = () => {
         <div className="items-center justify-between mx-auto mb-10 md:m-0 md:flex md:flex-col">
           <Link
             to="http://cinea.fch.unicen.edu.ar/"
+            rel="noopener"
             target="_blank"
             className="self-center cursor-pointer"
           >

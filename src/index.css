@@ -30,7 +30,7 @@
   }
 
   .info-section {
-    @apply h-screen max-w-screen-xl px-10 pb-10 mx-auto pt-28;
+    @apply max-w-screen-xl min-h-screen px-4 pb-10 mx-auto lg:px-10 pt-28;
   }
 
   .info-articles {
