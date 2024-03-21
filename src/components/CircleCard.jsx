@@ -1,6 +1,6 @@
 const CircleCard = ({ cardNumber, cardTitle, cardSubt }) => {
   return (
-    <div className="flex items-center">
+    <div className="flex items-center w-72">
       <span className="z-10 flex items-center justify-center text-3xl font-bold text-white align-middle rounded-full bg-main-500 size-24">
         {cardNumber}
       </span>

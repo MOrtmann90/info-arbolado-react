@@ -1,5 +1,5 @@
-import treeSvg from "../../src/assets/tree.svg";
-import humanSvg from "../../src/assets/human.svg";
+import treeSvg from "../assets/tree.svg";
+import humanSvg from "../assets/human.svg";
 
 const TreesHeight = ({
   treeClass,

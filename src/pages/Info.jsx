@@ -1,6 +1,6 @@
-import InfoSection1 from "./InfoSection1";
-import InfoSection2 from "./InfoSection2";
-import InfoSection3 from "./InfoSection3";
+import InfoSection1 from "../components/InfoSection1";
+import InfoSection2 from "../components/InfoSection2";
+import InfoSection3 from "../components/InfoSection3";
 import "./info.css";
 
 const Info = () => {

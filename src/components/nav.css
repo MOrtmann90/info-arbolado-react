@@ -15,7 +15,7 @@
 }
 
 .nav-menu {
-  @apply items-center hidden align-middle md:h-full md:space-x-10 md:flex;
+  @apply items-center hidden mr-8 text-center align-middle xl:m-0 md:h-full md:gap-6 md:flex;
 }
 
 .nav-menu-resp {
@@ -27,7 +27,7 @@
 }
 
 .nav-link-btn {
-  @apply text-center flex justify-center cursor-pointer hover:border-b-[3px] hover:border-white transition-all duration-100 ease-linear;
+  @apply flex mx-auto w-fit cursor-pointer hover:border-b-[3px] hover:border-white transition-all duration-100 ease-linear;
 }
 
 .active {

@@ -1,4 +1,4 @@
-import MapCard from "./MapCard";
+import MapCard from "../components/MapCard";
 
 const Maps = () => {
   return (

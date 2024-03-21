@@ -142,7 +142,7 @@ const Nav = () => {
           >
             Info <FaAngleDown className="self-center" />
             {isNavDropOpen && (
-              <ul className="absolute p-2 space-y-6 text-center transform -translate-x-1/2 rounded-md left-1/2 top-10 lg:space-y-2 w-fit lg:bg-main-500/70">
+              <ul className="absolute p-2 space-y-6 text-center transform -translate-x-1/2 rounded-md left-1/2 top-10 md:space-y-2 md:bg-main-500/70">
                 <li>
                   <ScrollLink
                     className="relative nav-link-btn"
