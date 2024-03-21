@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 @layer components {
-    .extra-info {
-        @apply font-bold cursor-pointer hover:text-main-500
-    }
+  .extra-info {
+    @apply font-bold cursor-pointer hover:text-main-500 inline;
+  }
 }

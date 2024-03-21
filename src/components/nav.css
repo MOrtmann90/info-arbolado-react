@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 .header {
-  @apply fixed z-50 w-full bg-black/30 md:bg-transparent;
+  @apply fixed z-40 w-full bg-black/30 md:bg-transparent;
 }
 
 .header.active-nav {

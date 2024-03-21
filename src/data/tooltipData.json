@@ -1,0 +1,28 @@
+[
+  {
+    "id": 0,
+    "title": "infraestructura verde urbana",
+    "text": "La infraestructura verde es una red estratégicamente planificada de zonas naturales y seminaturales de alta calidad con otros elementos medioambientales, diseñada y gestionada para proporcionar un amplio abanico de servicios ecosistémicos y proteger la biodiversidad tanto de los asentamientos rurales como urbanos (Comisión Europea, 2014)."
+  },
+  {
+    "id": 1,
+    "title": "bosques urbanos",
+    "text": "Los bosques urbanos son redes o sistemas que comprenden todos los arbolados (rodales), grupos de árboles y árboles individuales ubicados en las áreas urbanas y periurbanas; por tanto, se incluyen bosques, árboles en las calles, árboles en los parques y jardines y árboles en las esquinas de las calles (FAO, 2017). "
+  },
+  {
+    "id": 2,
+    "title": "arbolado urbano en alineación",
+    "text": "El arbolado de alineación, entendido como eje o elemento vertebrador de la infraestructura verde en las ciudades, y como corredor desde los modelos de la Ecología de Paisaje, comprende aquellos árboles, arbustos y/o palmeras existentes en las veredas de calles y avenidas, plantados en disposición alineada, pertenecientes a dominio municipal. "
+  },
+
+  {
+    "id": 3,
+    "title": "plantera",
+    "text": "Plantera: sitio potencial donde se puede ubicar un árbol (Dowhal, 2016)."
+  },
+  {
+    "id": 4,
+    "title": "sobre el proyecto",
+    "text": "Este estudio forma parte del trabajo de tesis para obtener el título de Licenciatura en Diagnóstico y Gestión Ambiental (FCH-UNICEN) de la estudiante Giuliana Pedro Centeno. El mismo se enmarca en el proyecto de investigación 'Cartografía y teledetección como herramientas de diagnóstico para la gestión ambiental (03/D347)', aprobado por el Programa de Incentivos a la Investigación de la Secretaría de Políticas Universitarias, y a partir del cual se ha firmado un Convenio Específico suscrito entre la Universidad Nacional del Centro de la Provincia de Buenos Aires, a través de la Facultad de Ciencias Humanas, y la Municipalidad de Tandil."
+  }
+]
